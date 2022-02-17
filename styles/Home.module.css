@@ -1,0 +1,18 @@
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main h1{
+  font-size: 3em;
+  color: #a22;
+}
+
+.main p{
+  color: #f88;
+}
