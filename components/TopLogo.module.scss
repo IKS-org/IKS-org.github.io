@@ -1,0 +1,61 @@
+.topLogo{
+  position: relative;
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0;
+
+  .topLogo_image_wrapper{
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    z-index: -1;
+    transform-origin: center center;
+    animation: spinLogo 5s ease-in-out infinite;
+  }
+  #spiningLogoImg{
+    object-fit: cover;
+  }
+
+  @keyframes spinLogo {
+    0%   {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+  h1{
+    font-size: 5em;
+    color: #a22;
+  }
+  h2{
+    font-size: 2em;
+    color: #a22;
+  }
+
+
+  p{
+    color: #f88;
+  }
+
+  h1, h2, p{
+    text-shadow: 0 0 3px #400, 0 0 20px rgba(0,0,0,0.9);
+    margin: 4px 0;
+  }
+
+  @media screen and (min-width: 650px){	
+    .pc { display:block; }
+    .sp { display:none; }
+  }
+  @media screen and (max-width: 650px){	
+    .pc { display:none; }
+    .sp { display:block; }
+  }
+}
