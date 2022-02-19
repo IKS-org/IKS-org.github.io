@@ -1,6 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
-import { TopLogo } from '../components/TopLogo'
+import type { NextPage } from "next";
+import Head from "next/head";
+import { TopLogo } from "../components/TopLogo";
 
 const Home: NextPage = () => {
   return (
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
       <TopLogo />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
